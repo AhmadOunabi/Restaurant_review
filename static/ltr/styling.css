@@ -1,0 +1,94 @@
+
+
+@font-face {
+    font-family: apple;
+    src: url(SF-UI-Display-Regular.otf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: apple;
+}
+
+body div{
+    display: flex;
+}
+
+body div .card2{
+    display: inline-block;
+    margin: 50px;
+    margin-left: 15px;
+    background-image: url("./appleWatch.jpg");
+    background-repeat: no-repeat;
+    background-size:400px 500px;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body div .card2:hover{
+    width: 410px;
+    height: 510px;
+    background-size: 410px 510px;
+    cursor: pointer;
+}
+body div .card:hover{
+    width: 410px;
+    height: 510px;
+    background-size: 410px 510px;
+}
+body div .card2 .one{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+body div .card2 .two{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+body div .card2 .three{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.card{
+    display:inline-block;
+    margin: 50px;
+    margin-right: 15px;
+    background: url("./foto.jpg");
+    background-repeat: no-repeat;
+    background-size:400px 500px;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h6{
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6e6e73;
+}
+
+h1{
+    padding-left: 10px;
+    margin: 10px;
+    color: #1d1d1f;
+}
+
+p{
+    padding: left 10px;
+    margin: 19px;
+    margin-top: 35px;
+    color: #1d1d1f;
+    font-size: 15px;
+}
+

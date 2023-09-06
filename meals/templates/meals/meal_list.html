@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+    <div>
+        
+
+        {% for meal in object_list %}
+        <a href="">
+            <div class="card">
+                <h6 id="1">{{meal.category}}</h6>
+                <h1 id="2">{{meal.name}}</h1>
+                <p id="3">{{meal.description}}<br> before trade‑in</p>
+            </div>
+        </a>
+
+        {% endfor %}
+
+
+
+    </div>
+
+{% endblock body %}
