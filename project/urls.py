@@ -19,10 +19,15 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 import meals
+from authentication.views import user_created
 
 urlpatterns = [
+    path('accounts/created', user_created),
     path('admin/', admin.site.urls),
-    path('',include('meals.urls'))
+    path('',include('meals.urls')),
+    path("accounts/", include("django.contrib.auth.urls")),
+    path('accounts/', include('authentication.urls')),
+    
 ]
 
 

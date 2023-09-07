@@ -7,3 +7,9 @@ from django.views import generic
 class MealList(generic.ListView):
     model= Meal
     
+
+
+
+class MealsDetail(generic.DetailView):
+    model = Meal
+    

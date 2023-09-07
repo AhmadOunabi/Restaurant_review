@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load django_bootstrap5 %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'ltr/styling.css' %}">
+{% endblock css %}
+    
+
+
+
+{% block body %}
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <input type="submit" value="SAVE">
+</form>
+
+{% endblock body %}

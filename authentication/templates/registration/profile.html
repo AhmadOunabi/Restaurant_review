@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'ltr/css/profile.css' %}">
+{% endblock css %}
+    
+
+
+{% block body %}
+
+
+{%for data in user_data %}
+    <h6>{{data.username}}</h6>
+    <h6>{{data.email}}</h6>
+{%endfor%}
+
+
+
+{% endblock body %}
