@@ -7,5 +7,5 @@ from .views import user_created,user_signup,user_profile
 
 urlpatterns = [
     path('signup', user_signup),
-    path('profile', user_profile),
+    path('profile/', user_profile),
 ]
