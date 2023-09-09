@@ -12,7 +12,16 @@
 {% block body %}
 
 
-  <a href="{{meal.id}}/review">Review</a>
+  <form method="post">
+
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="SUBMIT">
+
+
+
+
+  </form>
 
 
 <!-- <p>Please select your favorite Web language:</p>

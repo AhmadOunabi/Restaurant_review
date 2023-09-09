@@ -16,7 +16,7 @@ class Review(models.Model):
     user=models.ForeignKey(User,related_name='review_user',on_delete=models.SET_NULL,null=True,blank=True)
     meal=models.ForeignKey(Meal,related_name='meal_review',on_delete=models.CASCADE)
     review=models.CharField(max_length=500)
-    rate=models.IntegerField()
+    rate=models.IntegerField(default=2)
     create_date=models.DateTimeField(default=timezone.now)
     
     def __str__(self):
