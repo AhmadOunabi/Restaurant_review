@@ -12,6 +12,8 @@ class Meal(models.Model):
     def __str__(self):
         return self.name
 
+
+
 class Review(models.Model):
     user=models.ForeignKey(User,related_name='review_user',on_delete=models.SET_NULL,null=True,blank=True)
     meal=models.ForeignKey(Meal,related_name='meal_review',on_delete=models.CASCADE)
