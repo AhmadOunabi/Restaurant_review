@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'meals',
     'authentication',
     'django_bootstrap5',
+    'carts',
 ]
 
 MIDDLEWARE = [

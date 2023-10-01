@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+{% for product in products %}
+
+    <h2>{{product.product}}</h2>
+    
+
+{% endfor %}
+
+
+{% endblock body %}

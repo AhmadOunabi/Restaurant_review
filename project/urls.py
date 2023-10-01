@@ -27,6 +27,7 @@ urlpatterns = [
     path('',include('meals.urls')),
     path("accounts/", include("django.contrib.auth.urls")),
     path('accounts/', include('authentication.urls')),
+    path('carts/', include('carts.urls')),
     
 ]
 
